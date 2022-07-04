@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-            val kannenListe = Datasource().loadkannenListe()
+            val kannenListe = Datasource().loadKanne()
 
             val recyclerView = binding.recyclerView
 
