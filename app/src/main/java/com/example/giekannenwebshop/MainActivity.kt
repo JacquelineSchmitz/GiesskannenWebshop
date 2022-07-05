@@ -17,13 +17,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-            val kannenListe = Datasource().loadKanne()
+        val kannenListe = Datasource().loadKanne()
+        binding.kanneRecycler.adapter = KannenAdapter(this, kannenListe)
+        binding.kanneRecycler.setHasFixedSize(true)
 
-            val recyclerView = binding.recyclerView
-
-        recyclerView.adapter = KannenAdapter(this, kannenListe)
-        recyclerView.layoutManager = LinearLayoutManager(this)
     }
-
 }
 

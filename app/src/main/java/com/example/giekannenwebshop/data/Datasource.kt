@@ -3,8 +3,8 @@ package com.example.giekannenwebshop.data
 import com.example.giekannenwebshop.R
 import com.example.giekannenwebshop.data.model.Kanne
 
-class Datasource {
-    fun Kanne():List<Kanne>{
+class Datasource() {
+    fun loadKanne():List<Kanne>{
 
 
         return listOf(
@@ -21,22 +21,22 @@ class Datasource {
         ),
 
         Kanne(
-            "Rote Kanne", 15.00, R.drawable.can3, false
+            "Rote Kanne", 10.00, R.drawable.can3, false
 
         ),
 
         Kanne(
-            "Silberne Kanne", 15.00, R.drawable.can4, true
+            "Silberne Kanne", 20.00, R.drawable.can4, true
 
         ),
 
         Kanne(
-            "Goldene Kanne", 15.00, R.drawable.can5, false
+            "Goldene Kanne", 30.00, R.drawable.can5, false
 
         ),
 
         Kanne(
-            "Gelbe Kanne", 15.00, R.drawable.can6, true
+            "Gelbe Kanne", 12.00, R.drawable.can6, true
         ))
     }
 }
